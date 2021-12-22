@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+        .content{
+            background-color: rgb(80, 41, 116);
+            border-radius: 5px;
+            margin-left: 30%;
+            height: 200px;
+            width: 500px;
+            
+        }
+
+        body {
+            background-color: rgb(231, 227, 227);
+         
+        }
+
+        input {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            text-align: center;
+            color: rgb(85, 11, 146);
+        }
+
+        input[type=number] {
+            font-size: 18px;
+            height: 40px;
+            width: 80px;
+            margin: 5px;
+        }
+
+        input[type=button] {
+            width: 105px;
+            height: 40px;
+            background-color:rgb(206, 169, 241); 
+        }
+
+        .body-content {
+            display: block;
+            color: rgb(206, 169, 241); 
+            font-size: xx-large;
+            font-weight: bolder;
+            text-align: center;
+        }
+
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            color: rgb(85, 11, 146);
+            text-align: center;
+            border-radius: 5px;
+            line-height: 70px;
+            background-color: rgb(206, 169, 241);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">
+            <h1>Somando valores</h1>
+        </div>
+        <div class="body-content">
+            <input type="number" id="number1"> +
+            <input type="number" id="number2"> =
+            <input type="button" id="result" value="Somar" onclick="somar()">
+        </div>
+    </div>
+
+    <script>
+        number1.addEventListener('click', function () {result.value = "Somar"});
+        number2.addEventListener('click', () => {result.value = "Somar"});
+        function somar() {
+            var number1 = Number(document.getElementById("number1").value);
+            var number2 = Number(document.querySelector("input#number2").value);
+            var result = document.getElementById("result");
+            var sum = number1 + number2;
+            result.value = `${sum}`;
+        }
+
+    </script>
+</body>
+</html>
