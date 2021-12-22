@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(31, 1, 51);
+            color: rgb(172, 116, 224);
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aprendendo a usar <strong>DOM</strong></p>
+    <div id="mensagem">Clique em mim</div>
+    <script>
+        var msg = document.querySelector('div#mensagem');
+        msg.style.color = "blueviolet";
+    </script>
+</body>
+</html>
