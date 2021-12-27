@@ -11,6 +11,8 @@ class Table {
         + 'pet varchar(20),'
         + 'servico varchar(20) NOT NULL,'
         + 'status varchar(20) NOT NULL,'
+        + 'data datetime NOT NULL,'
+        + 'dataCriacao datetime NOT NULL,'
         + 'observacoes text,'
         + 'PRIMARY KEY(id))';
             
