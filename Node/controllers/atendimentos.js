@@ -7,7 +7,7 @@ module.exports = app => {
     app.post('/atendimentos', (req, res) => {
         const service = req.body
 
-        Service.add(service)
+        Service.add(service, res)
         res.send('Realizando um POST')
     })
 }
