@@ -1,0 +1,26 @@
+{
+  "name": "programa-de-bolsas",
+  "version": "1.0.0",
+  "description": "Repositorio para registrar exercicios e projetos desenvolvidos durante a trilha de capacitação de blockchain",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kellane/programa-de-bolsas.git"
+  },
+  "author": "Kellane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kellane/programa-de-bolsas/issues"
+  },
+  "homepage": "https://github.com/Kellane/programa-de-bolsas#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
