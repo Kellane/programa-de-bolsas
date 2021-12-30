@@ -1,5 +1,4 @@
 const fs = require('fs')
-fs.createReadStream('./assets/arya.jpg', (erro, buffer) => {
-    console.log("A imagem foi carregada")
-    console.log(buffer)
-})
+fs.createReadStream('./assets/arya.jpg')
+    .pipe(fs.createWriteStream('./assets/arya.jpg'))
+    .on('finish', () => console.log("A imagem foi carregada com sucesso!!'"))
