@@ -1,17 +1,26 @@
 const connection = require("../infraestrutura/connection")
+const archiveUpload = require('../archives/achivesUpload')
 
 class Pet {
     add(pet, res) {
         const query = 'INSERT INTO Pets SET ?'
 
-        connection.query(query, pet, erro => {
-            if(erro) {
-                console.log(erro)
-                res.status(400).json(erro)
-            } else {
-                res.status(200).json(pet)
+        archiveUpload(pet.image, pet.name, (newPath) => {
+            const newPet = {
+                name: pet.name,
+                image: pet.image
             }
-        })
+            
+            connection.query(query, newPet, erro => {
+                if(erro) {
+                    console.log(erro)
+                    res.status(400).json(erro)
+                } else {
+                    res.status(200).json(pet)
+                }
+            })
+            
+        } )
     }
 }
 

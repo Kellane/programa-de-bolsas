@@ -1,4 +1,11 @@
 const fs = require('fs')
-fs.createReadStream('./assets/arya.jpg')
-    .pipe(fs.createWriteStream('./assets/arya.jpg'))
-    .on('finish', () => console.log("A imagem foi carregada com sucesso!!'"))
+const path = require('path')
+
+
+module.exports = (archivePath, archiveName, callbackCreatedImage) => {
+    const newPath = `./assets/imagens/${archiveName}`
+    const 
+    fs.createReadStream(archivePath)
+    .pipe(fs.createWriteStream(newPath))
+    .on('finish', () => callbackCreatedImage(newPath))
+}
