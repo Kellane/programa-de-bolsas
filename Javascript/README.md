@@ -1,5 +1,5 @@
 # Javascript 
-Registro das atividades relacionadas aos cursos de javascript do modulo 2 da trilha de capacitação
+Registro das atividades relacionadas aos cursos de javascript do modulo 2 da trilha de capacitação que é mais voltado para parte de front-end
 
 # Sobre 
 Os exercicios foram feitos durante o curso de javascript disponivel no [Youtube](https://youtube.com/playlist?list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm). Os conteudo do curso consiste em:
