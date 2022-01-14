@@ -24,7 +24,7 @@ module.exports = {
         type: Sequelize.DATE
       },
       task: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.STRING
       }
     });
