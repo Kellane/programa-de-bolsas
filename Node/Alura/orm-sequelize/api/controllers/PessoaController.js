@@ -14,7 +14,7 @@ class PessoasController {
         const {id} = req.params
         try {
             const umaPessoa = await database.Pessoas.findOne({where: {id: Number(id)}})
-
+            return res.status(200).json(umaPessoa)
         } catch (error) {
             return res.status(500).json(error.message)
         }
@@ -62,7 +62,7 @@ class PessoasController {
         try {
             const umaMatricula = await database.Matriculas.findOne({
                 where: {
-                    id: Number(id),
+                    id: Number(matriculaId),
                     estudante_id: Number(estudanteId)
                 }
             })
@@ -78,7 +78,7 @@ class PessoasController {
         const novaMatricula = { ...req.body, estudante_id: Number(estudanteId)}
         try {
             const novaPessoaCriada = await database.Matriculas.create(novaMatricula)
-            return res.status(200).json(novaMatricula)
+            return res.status(200).json(novaPessoaCriada)
  
         } catch (error) {
             return res.status(500).json(error.message)
