@@ -14,12 +14,12 @@ Atualmente o programa é composto por 6 módulos que vão desde conhecimentos ma
 - Git
 - Markdown
 
-### Modulo II
+### Modulo II :heavy_check_mark:
 - Javascript
 - NodeJS
 - Python
 
-### Modulo III
+### Modulo III :heavy_check_mark:
 - Smart Contract
 - Hyperledger
 
